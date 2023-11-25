@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: brown;
+        }
+        .game{
+            width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 30px;
+        }
+        .game img{
+            width: 28%;
+            margin-right: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <div class="point">
+            <p class="yourPoint">You:0</p>
+            <p class="kpoint">Computer:0</p>
+            <button class="restart" onclick="restart()">restart</button>
+        </div>
+        <div class="choice">
+            <img src="paper.png" alt="" onclick="play ('paper')">
+            <img src="scissors.png" alt="" onclick="play ('scissors')">
+            <img src="rock.png" alt="" onclick="play ('rock')">
+        </div>
+        <div class="result">
+            <p class="player">Your choice:</p>
+            <p class="computer">Computer choice:</p>
+            <p class="winner">Result:</p>
+        </div>
+    </div>
+	<script src="lab5.js"></script>
+</body>
+    
+</body>
+</html>
